@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uf-8">
+    <title>Contato - Lancer Shop</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="caixa">
+            <img class="LancerLogo" src="imgLancer/logoMiti.png">
+            
+            <nav>
+                <ul>
+                    <li> <a href="lancer.html"> Home </a></li>
+                    <li> <a href="lancer-produtos.html"> Produtos </a> </li>
+                    <li><a href="contato.html"> Contato </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <form>
+            <input type="text" id="nomeUser" placeholder="Nome completo" class="input-padrao" required>
+
+            <input type="email" id="emailUser" placeholder="E-mail" class="input-padrao" required>
+
+            <input type="tel" id="telefoneUser" placeholder="Telefone com DDD" class="input-padrao" required>
+
+            <textarea cols="40" rows="5" placeholder="Deixe aqui sua mensagem..." class="input-padrao"
+                required></textarea><br><br>
+
+            <div>
+                <p>Como prefere nosso contato?</p><br><br>
+
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        checked>WhatsApp</label>
+            </div><br>
+
+            <div>
+                <p>Qual o melhor periodo do dia?</p>
+                <select>
+                    <option>Manhã - 08:00 as 11:00</option>
+                    <option>Tarde - 12:00 as 17:00</option>
+                    <option>Noite - 18:00 as 21:00</option>
+                </select>
+            </div><br><br>
+
+
+            <input type="submit" value="Enviar Formulario" class="enviarForm">
+        </form>
+
+        <table>
+            <!-- thead-->
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <!--tbody-->
+            <tbody>
+                <!-- table 1-->
+                <tr>
+                    <td>Segunda</td>
+                    <td>09:00 as 18:00</td>
+                </tr>
+                <!-- table 2-->
+                <tr>
+                    <td>Terça</td>
+                    <td>09:00 as 18:00</td>
+                </tr>
+                <!-- table 3-->
+                <tr>
+                    <td>Quarta</td>
+                    <td>09:00 as 18:00</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+
+    <footer>
+        &copy; Lancer Shop Brasil 2022
+    </footer>
+
+</html>
